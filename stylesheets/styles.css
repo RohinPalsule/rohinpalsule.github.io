@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #fefefe;
   padding:50px;
   font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
@@ -35,12 +35,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:rgb(92, 133, 96);
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:rgb(8, 81, 18);
 }
 
 a small {
@@ -51,7 +51,7 @@ a small {
 }
 
 a:hover small {
-  color:#777;
+  color:#5e6a62;
 }
 
 .wrapper {
