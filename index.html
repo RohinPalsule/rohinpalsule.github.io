@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <base target="_blank">
   </head>
+  <style>
+    .boxed {
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 12px;
+    }
+  </style>
+
   <body>
     <div class="wrapper">
       <header>
@@ -53,9 +61,57 @@
         <p>
           In my free time, I enjoy going on morning runs, exploring local cafes, and watching sports!
         </p>
+
+        <h2><b>Current Projects</b></h2>
+
+        <div class="boxed">
+          <b style="color: #5f8668;">The neural mechanisms behind memory-guided decision making across the later lifespan</b>
+          <ul>
+            <li>
+              Developed two fMRI experiments from the ground-up using PsychoPy
+            </li>
+            <li>
+              Created an fMRI analysis pipeline including a pre/post RSA searchlight (PyMVPA), a neural classifier for decoding (PyMVPA), univariate GLMs (SPM, Nilearn), and seed-voxel functional connectivity (Nilearn) 
+            </li>
+            <li>
+              Currently collecting data...
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="boxed">
+          <b style="color: #5f8668;">Evaluating the effect of contextual information gain on learning narratives</b>
+          <ul>
+            <li>
+              Reformulated a metric of narrative flow to reflect contextual information gain using large-language models <a href=#Sequentiality target="_self">[CCN 2026]</a>
+            </li>
+            <li>
+              Found that this metric maps on to causal centrality and importance, but notably not semantic centrality <a href=#CNLM target="_self">[CNLM 2026]</a>
+            </li>
+            <li>
+              Currently testing this metric with fMRI-based narrative studies to see if there is a neural basis behind our ground-truth metric of information gain
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="boxed">
+          <b style="color: #5f8668;">Uncertainty in sequential patch-foraging across the lifespan</b>
+          <ul>
+            <li>
+              Secured $15,000 in fMRI pilot funding to measure neural differences in sequential decision making
+            </li>
+            <li>
+              Planning to run an RSA on inferred measures of patch uncertainty (calculated through a Kalman Filter)
+            </li>
+            <li>
+              Currently collecting data...
+            </li>
+          </ul>
+        </div>
+        <br>
         <h2><b>Publications</b></h2>
         <p>
-        <span>
+        <span id="Sequentiality">
         Goeschel A*, <b>Palsule RA*</b>, Yoo J, Chen J, Bornstein AM, Khoudary A
         (2026).
         <a href="papers/2026_CCN_Sequentiality.pdf">
@@ -103,7 +159,7 @@
             Older Adult Differences in Exploration Measured Using a Structured Foraging Task, <i>Gerontological Society of America 
             2026</i>, under review [pdf]
         </span></p>
-        <p><span>
+        <p><span id="CNLM">
             <b>Palsule RA</b>, Goeschel A, Khoudary A, Yoo J, Chen J, Bornstein AM (2026, April 9) Comparing a large language
             model-derived metric of contextual information gain with human judgements in narratives, <i>2026 Center for the Neurobiology 
             of Learning and Memory Spring Conference, Irvine</i>. [<a href="posters/cnlm.pdf">pdf</a>]
